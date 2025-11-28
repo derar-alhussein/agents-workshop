@@ -3,11 +3,8 @@ import requests
 import pandas as pd
 import io
 
-# Initialize clients
-w = WorkspaceClient()
-client = VectorSearchClient()
 
-base_url = "https://raw.githubusercontent.com/derar-alhussein/agents-workshop/data"
+base_url = "https://raw.githubusercontent.com/derar-alhussein/agents-workshop/main/data"
 csv_files = {
     "cust_service_data": f"{base_url}/cust_service_data.csv",
     "policies": f"{base_url}/policies.csv", 

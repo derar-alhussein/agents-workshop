@@ -1,4 +1,9 @@
 # Databricks notebook source
+# MAGIC %pip install unitycatalog-ai[databricks]
+# MAGIC dbutils.library.restartPython()
+
+# COMMAND ----------
+
 catalog_name = "agents_lab"
 schema_name = "product"
 dbutils.widgets.text("catalog_name", defaultValue=catalog_name, label="Catalog Name")
